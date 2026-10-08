@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeu de clavier</title>
+    <link rel="icon" href="icon.png" type="image/png">
+    <link rel="stylesheet" href="style/style.css">
+    <script src="scripts/script.js" defer></script>
+    <script src="scripts/main.js" defer></script>
+</head>
+<body>
+
+    <!-- HEADER -->
+
+    <header>
+        <h1>Exercice clavier</h1>
+        <h2>L'application pour écrire plus vite !</h2>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+        <div class="zoneOptions">
+            <p>Choisissez votre option :</p>
+            <div class="optionSource">
+                <input type="radio" name="optionSource" id="mots" value="1">
+                <label for="mots">Mots</label>
+                <input type="radio" name="optionSource" id="phrases" value="2">
+                <label for="phrases">Phrases</label>
+            </div>
+            <p>Tapez la proposition qui s'affiche dans le champ en-dessous.</p>
+        </div>
+
+         <div class="zoneProposition">
+            Coccinelle
+        </div>
+
+        <div class="zoneSaisie">
+            <input type="text" id="inputEcriture">
+            <button id="btnValiderMot">Valider</button> 
+        </div>
+
+        <div class="zoneScore">
+            Votre score : <span>0</span>
+        </div>
+
+        <div class="zonePartage">
+            <p>Partagez votre score :</p>
+        </div>
+
+        <form novalidate>
+            <!-- champ nom -->
+            <label for="nom">Nom</label>
+            <input type="text" id="nom" name="nom" placeholder="Votre nom">
+
+            <!-- champ email -->
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Votre email">
+
+            <!-- bouton de validation -->
+            <button>Envoyer</button>
+        </form>
+
+    </main>
+
+    <!--  FOOTER -->
+
+    <footer>
+        <p>Projet fait en suivant le cours "Apprenez à programmer avec JavaScript" d'Openclassrooms - Octobre 2026</p>
+        <a href="https://www.alicedesruelle.com/">Codé avec &#x2764 par Alice Desruelle</a>
+    </footer>
+
+</body>
+</html>
